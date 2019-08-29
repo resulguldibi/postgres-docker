@@ -9,3 +9,10 @@ docker-compose up -d
 #connect postgres container
 
 docker exec -it my_postgres psql -U postgres
+
+#connect and create data in postgres container
+
+docker exec -it my_postgres psql -U postgres -c "create database my_database"
+
+
+
